@@ -19,7 +19,10 @@ the file `config.in` contains the global configuration of the algorithm.. For th
     sigma=0.405284735
     piOverL=0.5
 
-where `m` is the Galerkin approximation dimension (denoted the same in the paper), `M` is the finite dimensional part of the tail (denoted the same in the paper), `dftPts` is the number of points for the discrete Fourier transform, `dftPts2` is doesn't used in the proof, `order` is the Taylor method order, `step` is the fixed time step used by the integrator, `lambda` is the :math:`\lambda`
+where `m` is the Galerkin approximation dimension (denoted the same in the paper), `M` is the finite dimensional part of the tail (denoted the same in the paper), `dftPts` is the number of points for the discrete Fourier transform (it has to be >2m for the considered equation), `dftPts2` is doesn't used in the proof, `order` is the Taylor method order, `step` is the fixed time step used by the integrator, `lambda` is the `\lambda = 1/\epsilon^2` parameter in the diblock copolymer equation (see the referenced paper for the detailed form). `sigma` is the `\sigma` parameter in the equation (`\sigma=0` is the Cahn-Hillard case).
+`piOverL` is the value of `\pi` divided by the length of the domain `L`.
+
+
 
 
 
