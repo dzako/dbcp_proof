@@ -23,7 +23,7 @@ where `m` is the Galerkin approximation dimension (denoted the same in the paper
 `piOverL` is the value of `\pi` divided by the length of the domain `L`.
 
 
-
+The main program source is `DBCPModelHetConProof.cpp`
 
 
 
