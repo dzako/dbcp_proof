@@ -193,6 +193,20 @@ timestep it saves
 -  at which coordinates the entry of :math:`W_0` into
    :math:`\mathcal{W}_s` is NOT yet attained.
 
-.. raw:: html
+Source codes compilation instruction
+~~~~~~~~~~
+For those willing to compile the program on their machine we present
+compilation instructions. Program is written in C++ , gcc compiler 
+is required to compile it. It has checked to compile successfully 
+on 4.9.2 (Ubuntu 4.9.2-10ubuntu13). 
 
-   </p>
+After unzipping the folder call
+``./configure`` and then ``make`` in the main folder, 
+then 
+``cd DBCP``
+and 
+``make``.
+
+After successful compilation the binary file ``DBCPModelHetConProof`` 
+appears in ``DBCP`` folder. Then run the program according to the 
+instructions provided above.
