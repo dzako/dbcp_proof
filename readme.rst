@@ -176,7 +176,7 @@ Detailed numerical data can be found in the logfile
 timestep it saves
 
 -  the vector being finite dimensional part of the propagated bounds,
--  *each :math:`100` steps of the integration* the full infinite
+-  each :math:`100` steps of the integration* the full infinite
    dimensional polynomial bounds.
 -  at which coordinates the entry of :math:`W_0` into
    :math:`\mathcal{W}_s` is NOT yet attained.
