@@ -71,7 +71,8 @@ self-consistent bounds :math:`\mathcal{W}_u` using the format
 
     mode_index: interval_bounds
 
- It also outputs the values used to verify cone condition (e.g. the value
+
+It also outputs the values used to verify cone condition (e.g. the value
 denoted in the paper :math:`\varepsilon`, which is required to be
 positive).
 
@@ -84,7 +85,8 @@ The program outputs the numerical data with one of the faces of
 
     manifold.in
 
- This file is going to be the input to the next steps of the proof (the
+
+This file is going to be the input to the next steps of the proof (the
 following program calls as described).
 
 
@@ -176,7 +178,7 @@ Detailed numerical data can be found in the logfile
 timestep it saves
 
 -  the vector being finite dimensional part of the propagated bounds,
--  each :math:`100` steps of the integration* the full infinite
+-  each :math:`100` steps of the integration the full infinite
    dimensional polynomial bounds.
 -  at which coordinates the entry of :math:`W_0` into
    :math:`\mathcal{W}_s` is NOT yet attained.
