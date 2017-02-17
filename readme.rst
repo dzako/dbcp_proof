@@ -28,7 +28,7 @@ configuration for the example used in the paper.
     order=16
     step=0.002
     lambda=4
-    sigma=0.405284735
+    sigma=0.40528473456935108
     piOverL=0.5
 
 
@@ -42,7 +42,8 @@ method order, ``step`` is the fixed time step used by the integrator,
 ``lambda`` is the :math:`\lambda = 1/\epsilon^2` parameter in the
 diblock copolymer equation (see the referenced paper for the detailed
 form), ``sigma`` is the :math:`\sigma` parameter in the equation
-(:math:`\sigma=0` is the Cahn-Hillard case), ``piOverL`` is the value of
+(to obtain the value :math:`4/\pi^2` in Theorem, we add small interval
+:math:`[-1e-16,1e16]`), ``piOverL`` is the value of
 :math:`\pi` divided by the length of the domain :math:`L`.
 
 The main program source is ``DBCPModelHetConProof.cpp``. The program
