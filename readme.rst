@@ -2,8 +2,8 @@ This repository contains source files and numerical data of the computer
 assisted proof of a heteroclinic connection in diblock copolymer model
 (DBCP) as presented in the paper entitled
 
-*‚ÄúComputer-assisted proof of heteroclinic connections in the
-one-dimensional Ohta-Kawasaki model‚Äù*
+*ìComputer-assisted proof of heteroclinic connections in the
+one-dimensional Ohta-Kawasaki modelî*
 
 by Jacek Cyranka and Thomas Wanner
 
@@ -51,19 +51,31 @@ performs three steps of the proof, as described in section 4 Proof of
 the main result in the paper. See the paper for the details. The program
 has to be called exactly in the order specified below.
 
+Heteroclinic to local/global minimizer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The same computer program is used to prove heterolinic to the local and 
+the global minimizers. The last (third) parameter (either ``local`` or 
+``global``). In the guidelines below the third parameter is always set
+to ``local``, the result is the proof of the heteroclinic to the local
+minimizer. In order to perform the proof of the heteroclinic to the 
+global, the last parameter needs to be changed into ``global``  in all
+the lines below.
+
+
 First step
 ~~~~~~~~~~
 
 Construction of self-consistent bounds
 :math:`\mathcal{W}_u\subset H^\prime`, such that :math:`\mathcal{W}_u`
 is an unstable isolating block. :math:`\mathcal{W}_u` is centered at the
-origin, and is verified to satisfy the cone condition. After compilation
-the first step of the proof is performed by the program by calling the
-program with the argument as follows
+origin, and is verified to satisfy the cone condition. After succesfull compilation
+the first step of the proof (for the local minimizer) is performed by the 
+program by calling the program with the arguments as follows
 
 ::
 
-    ./DBCPModelHetConProof manifold
+    ./DBCPModelHetConProof manifold local
 
 The program prints out to the standart output the constructed
 self-consistent bounds :math:`\mathcal{W}_u` using the format
@@ -99,6 +111,14 @@ conditions (e.g. cone conditions vector with values).
 
 Second step
 ~~~~~~~~~~~
+
+After performing the first step
+the second step of the proof (for the local minimizer) is performed by the 
+program by calling the program with the arguments as follows
+
+::
+
+    ./DBCPModelHetConProof fixedpoint local
 
 Construction of self-consistent bounds
 :math:`\mathcal{W}_s\subset H^\prime`, such that :math:`\mathcal{W}_s`
@@ -160,7 +180,13 @@ the bounds containing a part of unstable manifold (denoted :math:`W_0`
 in the paper) until it is trapped in the interior of
 :math:`\mathcal{W}_s`.
 
+After performing the second step
+the third step of the proof (for the local minimizer) is performed by the 
+program by calling the program with the arguments as follows
 
+::
+
+    ./DBCPModelHetConProof integrate local
 
 
 The program reads the input bounds for :math:`W_0` and
