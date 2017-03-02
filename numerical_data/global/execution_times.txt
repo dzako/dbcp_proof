@@ -1,0 +1,9 @@
+FFT integration step total time
+real	6m34.066s
+user	6m33.100s
+sys	0m0.096s
+
+Direct method integration total time
+real	17m29.721s
+user	17m28.852s
+sys	0m0.064s

@@ -1,0 +1,9 @@
+m=39
+M=250
+dftPts=80
+dftPts2=540
+order=7
+step=0.0001
+lambda=4
+sigma=0.40528473456935108
+piOverL=0.5
