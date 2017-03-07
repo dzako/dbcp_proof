@@ -7,13 +7,15 @@ one-dimensional Ohta-Kawasaki model”*
 
 by Jacek Cyranka and Thomas Wanner
 
+`https://arxiv.org/abs/1703.01022<https://arxiv.org/abs/1703.01022/>`_
+
 The code uses the code by Jacek Cyranka published in previous works
 
 -  *Existence of globally attracting fixed points of viscous Burgers
    equation with constant forcing. A computer assisted proof*
-   http://ww2.ii.uj.edu.pl/~cyranka/Burgers/
+   `link<http://ww2.ii.uj.edu.pl/~cyranka/Burgers/>`_
 -  *Efficient and generic algorithm for rigorous integration forward in
-   time of dPDEs: Part I* http://ww2.ii.uj.edu.pl/~cyranka/FFT/
+   time of dPDEs: Part I* `link<http://ww2.ii.uj.edu.pl/~cyranka/FFT/>`_
 
 the file ``config.in`` contains the global configuration of the
 algorithm. The file included in the repository contains the
