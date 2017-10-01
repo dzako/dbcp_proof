@@ -240,3 +240,9 @@ and
 After successful compilation the binary file ``DBCPModelHetConProof`` 
 appears in ``DBCP`` folder. Then run the program according to the 
 instructions provided above.
+
+Compilation under Windows
+~~~~~~~~~~
+For the compilation of the software under Windows 10 operating system
+we recommend installing Ubuntu Bash, and compiling using the gcc
+compiler following the instructions presented above.
